@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>A FCamara está com saudades!</title>
+    <link rel="shortcut icon" href="/assets/img/icon-fcamara.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <div class="header-margin">
+            <h1 class="titulo-header">Estamos com saudades!</h1>
+            <p class="p-header">Com a Pandemia da Covid-19, muita coisa mudou. O trabalho remoto não foi uma opção, mas sim necessário e assim se foram quase 2 anos de home office.</p>
+
+            <p class="p-header">Porém, hoje com a vacinação em andamento, já podemos enxergar novas possibilidades, e aqui na FCamara não é diferente, com muito cuidado e segurança estamos planejando a reabertura da nossa empresa. </p>
+                
+            <p class="p-header">Estamos muito felizes com essa novidade, mas sabemos que não será como antes.</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+        <div class="img-sala"></div>
+        <h2 class="titulo-main">Porém, atenção:</h2>
+        <h2 class="titulo-main">O retorno é opcional!</h2>
+        <p class="p-main">Ou seja, para quem ainda não se sente à vontade para ir, ou mora fora das regiões onde estão os escritórios, irá permanecer em casa. Segurança em primeiro lugar!</p>
+        <br>
+        <div class="img-trabalhoemequipe"></div>
+        <h3>Algumas informações importantes sobre o <u>funcionamento dos escritórios:</u></h3>
+        <ul class="lista-info">
+            <li class="lista-info-item">Os escritórios voltarão a ficar abertos no horário das 8h às 18h.</li>
+            <li class="lista-info-item">O retorno ao escritório só é possível através de um sistema de agendamento, onde os #SangueLaranjas poderão optar qual escritório ir, além de escolher data e também a estação de trabalho demarcada com um número.</li>
+            <li class="lista-info-item">Será medida a temperatura ao chegar no escritório.</li>
+            <li class="lista-info-item">Todos os consultores deverão usar máscaras dentro das acomodações dos escritórios.</li>
+            <li class="lista-info-item">Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.</li>
+            <li class="lista-info-item">Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa.</li>
+            <li class="lista-info-item">Os escritórios só podem comportar até 40% dos consultores, conforme a legislação</li>
+        </ul>
+        </div>
+    
+    <form class="form-agendamento" id="form-agendamento">
+            <h2 class="titulo-form">Quero voltar para o regime presencial!</h2>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required >
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" required >
+            
+            <label for="setor">Setor</label>
+            <input type="text" id="setor" required > 
+            
+            <label for="escritorio">Escritório</label>
+            <select id="escritorio">
+                <option>São Paulo</option>
+                <option>Santos</option>
+            </select>
+            <button class="btn-agendar" onclick="agendar()">Solicitar Agendamento</button>
+    </form>
+    </main>
+    <!-- g -->
+</body>
+</html>

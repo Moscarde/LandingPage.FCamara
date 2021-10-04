@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500;700&display=swap');
+
+header{
+    background-color: #FC6027;
+    color: #303033;
+    padding: 50px 0 50px 0;
+}
+.header-margin{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.titulo-header{
+    color: #F3F3F3;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 72px;
+    letter-spacing: 0.055em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.p-header{
+    font-weight: 600;
+    max-width: 80%;
+    line-height: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main-content{
+    width: 40%;
+    padding: 20px 100px 20px 100px;
+    margin-bottom: 100px;
+    color: #111111;;
+}
+
+.img-sala, .img-trabalhoemequipe{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 22px;
+    height: 110px;
+    width: 425px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.img-sala{
+    background-image: url(../img/conference-room-768441_1920.jpg);
+}
+
+.img-trabalhoemequipe{
+    background-image: url(../img/teamwork-3213924_1920.jpg);
+}
+
+.titulo-main{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.035em;
+    color:#C43E0D;
+    font-size:40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.titulo-main:first-of-type{
+    color:#000000;
+}
+.lista-info{
+    list-style: disc;
+    padding-left: 40px;
+}
+.lista-info-item{
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+.form-agendamento{
+    display: flex;
+    flex-direction: column;
+    background-color:#686DC4;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    width: 334px;
+    padding:30px;
+    height: fit-content;
+    color:#F3F3F3;
+    margin-top: -50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+.titulo-form{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.015em;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-agendamento input, .form-agendamento select{
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+.btn-agendar{
+    margin-top:10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    background: #FC6027;
+    border-radius: 10px;
+    color: #F3F3F3;
+    padding:10px 20px;
+
+}
+.btn-agendar:hover{
+    background: #C43E0D;
+    color: #FFFFFF;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+
+ @media screen and (max-width: 900px) {
+     
+    header{
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+    .p-header{
+        max-width: 100%;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-content{
+        padding: 20px;
+        width: 80%;
+        margin-bottom: 60px;
+    }
+    .form-agendamento{
+        margin-bottom: 60px;
+    }
+
+} 
+
+
+@media screen and (min-width: 900px) and (max-width: 1350px) {
+    .header-margin{
+        padding-left: 40px;
+        transition: all 0.3s ease-in-out;
+    }
+    .main-content{
+        padding: 20px;
+        width: 60%;
+        transition: all 0.3s ease-in-out;
+    }
+    .form-agendamento{
+        margin-left: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+}
+/* g */
